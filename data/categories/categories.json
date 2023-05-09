@@ -1,0 +1,26 @@
+[
+  {
+    "id": "react",
+    "props": ["ssg"]
+  },
+  {
+    "id": "vue",
+    "props": ["ssg"]
+  },
+  {
+    "id": "html",
+    "props": ["ssg"]
+  },
+  {
+    "id": "tailwind",
+    "props": ["css"]
+  },
+  {
+    "id": "bootstrap",
+    "props": ["css"]
+  },
+  {
+    "id": "scss",
+    "props": ["css"]
+  }
+]
