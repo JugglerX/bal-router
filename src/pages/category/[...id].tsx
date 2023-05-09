@@ -19,7 +19,7 @@ const CategoryPage = (props: Props) => {
   const { primaryCategoryId, configureFilters, filters = [] } = props.data;
   return (
     <>
-      {/* <Configure filters={configureFilters} /> */}
+      <Configure filters={configureFilters} />
       <FilterBar filters={filtersHome} />
       <div className="themes container mx-auto px-8 py-24">
         <h1 className="mb-6 text-3xl text-black">{primaryCategoryId}</h1>
