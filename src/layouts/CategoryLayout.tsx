@@ -5,24 +5,23 @@ import { createInstantSearchRouterNext } from "react-instantsearch-hooks-router-
 import algoliasearch from "algoliasearch";
 import Header from "../components/Header";
 import Footer from "@/components/Footer";
-import { getCategoryGroup } from "lib/category";
 
 const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, process.env.NEXT_PUBLIC_ALGOLIA_API_KEY);
 const searchIndex = process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME;
 
-type DefaultLayoutProps = {
+type CategoryLayoutProps = {
   children: ReactNode;
 };
 
-const DefaultLayout = (props: DefaultLayoutProps) => {
+const CategoryLayout = (props: CategoryLayoutProps) => {
   const router = useRouter();
-  console.log("DefaultLayout router", router);
+  console.log("CategoryLayout router", router);
   const { children } = props;
 
   useEffect(() => {
-    console.log("Mount DefaultLayout");
+    console.log("Mount CategoryLayout");
     return () => {
-      console.log("Unmount DefaultLayout");
+      console.log("Unmount CategoryLayout");
     };
   }, []);
 
@@ -105,4 +104,4 @@ const DefaultLayout = (props: DefaultLayoutProps) => {
   );
 };
 
-export default DefaultLayout;
+export default CategoryLayout;

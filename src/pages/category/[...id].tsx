@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import { Configure, Pagination } from "react-instantsearch-hooks-web";
-import DefaultLayout from "@/layouts/Default";
+import CategoryLayout from "@/layouts/CategoryLayout";
 import { getAllFirstLevelCategoryIds, getCategoryDataArray } from "lib/category";
 import FilterBar from "@/components/FilterBar";
 import ThemeGrid from "@/components/ThemeGrid";
@@ -64,7 +64,7 @@ export async function getStaticProps({ params }) {
 }
 
 CategoryPage.getLayout = function getLayout(page: ReactElement) {
-  return <DefaultLayout>{page}</DefaultLayout>;
+  return <CategoryLayout>{page}</CategoryLayout>;
 };
 
 export default CategoryPage;

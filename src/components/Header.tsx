@@ -12,6 +12,12 @@ const Header = (props) => {
           <Link href="/category/react" className="px-2 py-2 text-sm text-indigo-600 underline hover:text-indigo-400">
             <span>Category: React</span>
           </Link>
+          <Link
+            href="/category/bootstrap"
+            className="px-2 py-2 text-sm text-indigo-600 underline hover:text-indigo-400"
+          >
+            <span>Category: Bootstrap</span>
+          </Link>
         </nav>
       </div>
     </div>
